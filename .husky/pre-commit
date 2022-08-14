@@ -28,7 +28,4 @@ npm run check-format ||
 )
 
 # If everything passes... Now we can commit
-echo 'Commit passed all tests.\n'
-
-# If everything passes... Now we can commit
 echo '✅✅✅✅ Committing ✅✅✅✅'
