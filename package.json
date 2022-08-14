@@ -8,12 +8,12 @@
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "prettier --check --plugin-search-dir=. . && eslint .",
     "format": "prettier --write --plugin-search-dir=. .",
     "prepare": "husky install",
     "check-types": "tsc --pretty --noEmit",
-    "check-format": "prettier --check .",
-    "test-all": "npm run check-types && npm run check-format"
+    "check-lint": "eslint . --ext tsx --ext ts --ext js",
+    "check-format": "prettier --check --plugin-search-dir=. . && eslint .",
+    "test-all": "npm run check-types && npm run check-lint && npm run check-format"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",

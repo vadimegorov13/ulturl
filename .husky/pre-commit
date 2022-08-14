@@ -3,14 +3,6 @@
 
 echo '🏗️👷 Styling, testing and building the project before committing'
 
-# Check Prettier standards
-npm run check-format ||
-(
-    echo 'Bad styling
-    Prettier Check Failed. Run "npm run format", add changes, and try commit again.';
-    false;
-)
-
 # Check tsconfig standards
 npm run check-types ||
 (
@@ -19,8 +11,24 @@ npm run check-types ||
     false;
 )
 
+# Check ESLint Standards
+npm run check-lint ||
+(
+    echo 'ESLint Check Failed. 
+    Make the required changes listed above, add changes and try to commit again.'
+    false; 
+)
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo 'Bad styling
+    Prettier Check Failed. Run "npm run format", add changes, and try commit again.';
+    false;
+)
+
 # If everything passes... Now we can commit
-echo 'Passed style and type test.'
+echo 'Commit passed all tests.\n'
 
 # If everything passes... Now we can commit
 echo '✅✅✅✅ Committing ✅✅✅✅'
