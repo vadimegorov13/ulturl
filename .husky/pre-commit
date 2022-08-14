@@ -28,4 +28,4 @@ npm run check-format ||
 )
 
 # If everything passes... Now we can commit
-echo '✅✅✅✅ Committing ✅✅✅✅'
+echo '\n✅✅✅✅ Committing ✅✅✅✅'
