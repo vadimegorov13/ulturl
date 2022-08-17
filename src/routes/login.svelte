@@ -17,8 +17,8 @@
 
 <PageContainer>
   <PageHeading>Login</PageHeading>
-  <div class="grid grid-cols-12 gap-6">
-    <div class="col-span-12 lg:col-span-6">
+  <div class="grid grid-cols-12 gap-6 md:p-10">
+    <div class="col-span-12 lg:col-span-6 text-2xl">
       <p>You are not logged in!</p>
       <p>
         Please enter your email to login, using
@@ -29,7 +29,7 @@
       class="col-span-12 flex flex-col gap-6 lg:col-span-6"
       on:submit|preventDefault={handleSubmit}
     >
-      <div class="md:w-full">
+      <div class="md:w-full text-xl">
         <input
           type="email"
           name="email"
