@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { user } from '$lib/stores/user';
+
   let previousY: number;
   let currentY: number;
   let clientHeight: number;
@@ -33,6 +35,11 @@
       <li>
         <a href="/about">About</a>
       </li>
+      {#if $user}
+        <li>
+          <a href="/profile">{$user.email}</a>
+        </li>
+      {/if}
     </ul>
   </nav>
 </header>

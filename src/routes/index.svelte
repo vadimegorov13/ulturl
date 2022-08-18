@@ -17,6 +17,6 @@
     </div>
   </div>
   <div class="md:col-span-6 md:self-center">
-    <div class="card h-96">form is here</div>
+    <div class="card h-96">form</div>
   </div>
 </section>
